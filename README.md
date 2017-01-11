@@ -16,8 +16,7 @@ Note that ${GTEST_DIR} is the directory of `Google Test`. Set it by typing the f
 
 Lastly, compile the test source file with `${GTEST_DIR}/include`:
 
-    g++ -isystem ${GTEST_DIR}/include -pthread path/to/your_test.cpp libgtest.a
--o your_test.out
+    g++ -isystem ${GTEST_DIR}/include -pthread path/to/your_test.cpp libgtest.a -o your_test.out
 
 # Test
 
