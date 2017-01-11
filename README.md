@@ -4,19 +4,19 @@ First, clone [Google Test](https://github.com/google/googletest)
 
 Then, compile `Google Test` by running following commands in the target project directory:
 
-g++ -isystem ${GTEST_DIR}/include -I${GTEST_DIR} -pthread -c ${GTEST_DIR}/src/gtest-all.cc
+    g++ -isystem ${GTEST_DIR}/include -I${GTEST_DIR} -pthread -c ${GTEST_DIR}/src/gtest-all.cc
 
 and 
 
-ar -rv libgtest.a gtest-all.o
+    ar -rv libgtest.a gtest-all.o
 
 Note that ${GTEST_DIR} is the directory of `Google Test`. Set it by typing the following command:
 
-export GTEST_DIR=path/to/google/test
+    export GTEST_DIR=path/to/google/test
 
 Lastly, compile the test source file with `${GTEST_DIR}/include`:
 
-g++ -isystem ${GTEST_DIR}/include -pthread path/to/your_test.cpp libgtest.a
+    g++ -isystem ${GTEST_DIR}/include -pthread path/to/your_test.cpp libgtest.a
 -o your_test.out
 
 # Test
