@@ -10,7 +10,7 @@ and
 
     ar -rv libgtest.a gtest-all.o
 
-Note that ${GTEST_DIR} is the directory of `Google Test`. Set it by typing the following command:
+Note that `${GTEST_DIR}` is the directory of `Google Test`. Set it by typing the following command:
 
     export GTEST_DIR=path/to/google/test
 
@@ -20,7 +20,7 @@ Lastly, compile the test source file with `${GTEST_DIR}/include`:
 
 # Test
 
-Modified and run `test.sh`. The output would look like this:
+Modify and run `test.sh`. The output would look like this:
 
     [==========] Running 1 test from 1 test case.
     [----------] Global test environment set-up.
